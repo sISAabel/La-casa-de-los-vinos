@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="shortcut icon" href="src/img/logo.ico" type="image/x-icon">
+  <title>La Casa de los Vinos</title>
+</head>
+<body class="no-margin">
+  <header>
+    <div class="logo">
+      <div class="logo-img no-margin">
+        <img src="src/img/logo.png" alt="logo">
+      </div>
+      <h1>La Casa de Los vinos</h1>
+    </div>
+    <nav class="menu">
+      <a href="#about">Sobre la Casa</a>
+      <a href="#location">Dónde Estamos</a>
+      <a href="#contact">Contáctanos</a>
+    </nav>
+  </header>
+  <div class="cont">
+    <div id="about">
+      <h1>Sobre la Casa</h1>
+      <div class="about-house">
+        <div class="carousel">
+          <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+              <img src="src/img/gallery-img1.jpg" class="carousel-img">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+              <img src="src/img/gallery-img2.jpg" class="carousel-img">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+              <img src="src/img/gallery-img3.jpg" class="carousel-img">
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+          </div>
+        </div>
+        <div class="about-info">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero autem fuga esse, officia perferendis temporibus, amet minima id, beatae repudiandae praesentium explicabo quas similique quasi. Tempore, nesciunt? Debitis tempora eaque totam optio earum dicta, possimus voluptate consectetur ab voluptas reprehenderit asperiores nesciunt iste rem odit magnam quas eum voluptates nostrum natus inventore quisquam est hic. Voluptatibus rem inventore consequatur, quaerat nemo atque tempora, aliquid assumenda perspiciatis reprehenderit quos veritatis quasi labore illum harum. Neque, dolorum. Officia qui nostrum adipisci, sed esse nulla commodi unde? Perferendis culpa, cum quos itaque perspiciatis deleniti eaque quis! Accusantium nesciunt sit aut itaque pariatur.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat voluptatum totam neque aliquam recusandae praesentium velit possimus sapiente cumque rem ad officiis rerum incidunt officia voluptate, veritatis obcaecati, maiores fuga corporis? Nostrum laborum reprehenderit, recusandae odit illo voluptatum, nihil sapiente at magnam numquam iusto maiores error corporis obcaecati repellat aperiam neque. Repudiandae itaque earum, fugiat eveniet veniam quasi deleniti expedita debitis aspernatur magnam, dolore, culpa deserunt amet? Accusamus dolorum tempora, aperiam illum laboriosam culpa ratione optio error eaque provident sequi. Ex autem eaque nulla. Dignissimos cupiditate architecto, illo, consectetur eaque sunt corrupti quibusdam rerum velit qui quasi saepe voluptatem cumque!</p>
+          <nav class="social-bar no-margin">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="location">
+      <h1>¿Dónde Estamos?</h1>
+      <div class="location-info">
+        <div class="address">
+          <div class="address-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Calle Lorem Ipsum º25, Santa Cruz de Tenerife, España</p>
+          </div>
+          <div class="address-info">
+            <i class="fas fa-phone"></i>
+            <p>922 99 99 99</p>
+          </div>
+          <div class="address-info">
+            <i class="fas fa-envelope"></i>
+            <p>info@casadelosvinos.es</p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-16.76031678915024%2C28.21831785501031%2C-16.75927340984345%2C28.219341217340343&amp;layer=mapnik&amp;marker=28.21882953740138%2C-16.75979509949684"></iframe>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h1>Contacta Con Nosotros</h1>
+      <div class="contact-form">
+        <form>
+          <label for="name">Nombre:</label><br>
+          <input type="text" name="name" id="name" placeholder="Sara Isabel" required><br><br>
+          <label for="lname">Apellidos:</label><br>
+          <input type="text" name="lname" id="lname" placeholder="Rodríguez Mata" required><br><br>
+          <label for="email">Correo Electónico</label><br>
+          <input type="email" name="email" id="email" placeholder="correo@ejemplo.com" required><br><br>
+          <label for="tel">Teléfono</label><br>
+          <input type="tel" name="tel" id="tel" placeholder="643999999" required><br><br>
+          <label for="date">Fecha</label><br>
+          <input type="date" name="date" id="date" required><br><br>
+          <label for="sms">Mensaje</label><br>
+          <textarea name="sms" id="sms" cols="30" rows="10" placeholder="Mi mensaje aquí..." required></textarea><br><br>
+          <input type="reset" value="Borrar" class="button"><br><br>
+          <input type="submit" value="Enviar" class="button">
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>CopyRight <i class="far fa-copyright"></i> 2021 - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=Roboto+Slab&display=swap');
+:root {
+  --fontTitle: 'Cinzel Decorative', cursive;
+  --fontCont: 'Roboto Slab', serif;
+  --wine: rgb(79, 5, 9);
+  --blackWine: rgb(30, 8, 10);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-size: 68.5%;
+}
+.no-margin {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fontCont);
+}
+/*-----------Cabecera----------*/
+header {
+  width: 100%;
+  height: 20%;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--blackWine);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.logo-img {
+  width: 10%;
+}
+.logo-img img {
+  width: 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(70, 47, 47));
+  filter: drop-shadow(5px 5px 5px rgb(65, 49, 49));
+}
+.logo h1 {
+  font-family: var(--fontTitle);
+  color: var(--white);
+  font-size: 8em;
+  font-weight: 900;
+}
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: 3.5em;
+}
+.menu a {
+  color: var(--white);
+  text-decoration: none;
+}
+.menu a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  text-shadow: 3px -3px 3px rgb(139, 242, 5);
+  border-bottom: rgb(139, 242, 5)2px solid;
+}
+/*-----------Contenido de la Página----------*/
+.cont {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 5em;
+}
+/*-----------Sobre la empresa---------*/
+#about {
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-image: url('../img/bg_casa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30%;
+  gap: 2em;
+}
+#about h1 {
+  font-family: var(--fontTitle);
+  font-size: 10em;
+  color: var(--white);
+  text-shadow: -3px -1px 6px rgb(2, 2, 2);
+  text-align: center;
+}
+/*-----------galeria de fotos----------*/
+.about-house {
+  width: 90%;
+  background: rgba(94, 10, 10, 0.568);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 2em;
+}
+.carousel-img {
+  width: 100vw;
+  height: 80vh;
+  border-radius: 10px;
+}
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  overflow: hidden;
+}
+.carousel-open:checked+.carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+.carousel-item img {
+  max-width: 100%;
+}
+.carousel-control {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+}
+.carousel-control.prev {
+  left: 2%;
+}
+.carousel-control.next {
+  right: 2%;
+}
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+  display: block;
+}
+/*-----------info la empresa----------*/
+.about-info {
+  width: 100%;
+  padding: 1em;
+  font-size: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: justify;
+  color: var(--black);
+  font-weight: bolder;
+  text-shadow: -3px -1px 6px rgb(255, 255, 255);
+}
+.social-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.social-bar a{
+  color: var(--blackWine);
+  font-size: 8em;
+}
+.social-bar a:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  color: var(--wine);
+}
+#location {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#location h1 {
+  font-family: var(--fontTitle);
+  font-size: 10em;
+  color: var(--wine);
+}
+.location-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.address {
+  width: 30%;
+  font-size: 10em;
+  display: flex;
+  flex-direction: column;
+  
+}
+.address-info {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.address-info i {
+  color: var(--wine);
+  font-size: 3em;
+}
+.map {
+  width: 50%;
+}
+.map iframe {
+  border-radius: 10px;
+  box-shadow: 1px 5px 17px -1px rgba(0, 0, 0, 0.75);
+}
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h1 {
+  font-family: var(--fontTitle);
+  font-size: 10em;
+  color: var(--wine);
+}
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/form.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em 4em 2em;
+  border-radius: 10px;
+  box-shadow: 1px 5px 17px -1px rgba(0, 0, 0, 0.75);
+}
+form {
+  width: 80%;
+  padding: 3em;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 5em;
+  color: var(--blackWine);
+  font-weight: bolder;
+}
+form input, textarea {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+  border: none;
+}
+input {
+  font-family: var(--fontTitle);
+}
+::placeholder {
+  color: var(--blackWine);
+  font-family: var(--fontCont);
+}
+.button {
+  background-color: var(--wine);
+  color: var(--white);
+  font-weight: 900;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: 0.5s; 
+}
+footer  {
+  margin-top: 5em;
+  background-color: var(--blackWine);
+  color: var(--white);
+  font-size: 3em;
+  width: 100%;
+  padding: 4em 2em 4em 2em;
+  text-align: center;
+}
+footer i {
+  font-size: 1.5em;
+}
