@@ -113,7 +113,7 @@ header {
   padding: 2em;
 }
 .carousel-img {
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   border-radius: 10px;
 }
@@ -214,7 +214,7 @@ header {
 .address-info {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
 }
 .address-info i {
   color: var(--wine);
@@ -224,6 +224,8 @@ header {
   width: 50%;
 }
 .map iframe {
+  width: 100%;
+  height: 50vh;
   border-radius: 10px;
   box-shadow: 1px 5px 17px -1px rgba(0, 0, 0, 0.75);
 }
@@ -300,4 +302,29 @@ footer  {
 }
 footer i {
   font-size: 1.5em;
+}
+@media (max-width:768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  .carousel-img {
+    height: 30vh;
+  }
+  .location-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  form {
+    width: 90%;
+  }
 }
